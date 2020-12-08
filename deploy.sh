@@ -12,4 +12,4 @@ docker push tomasciudad/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=tomasciudad/multi-server:$SHA
 kubectl set image deployments/client-deployment client=tomasciudad/multi-client:$SHA
-kubectl set image deployments/worker-deployment worder=tomasciudad/multi-worker:$SHA
+kubectl set image deployments/worker-deployment worker=tomasciudad/multi-worker:$SHA
